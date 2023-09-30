@@ -1,12 +1,17 @@
 <template>
-  <div class="article-card">
-    <div class="article-image">
-      <img :src="article.img" alt="Article Image" />
+  <div>
+    <div class="article-card">
+      <div class="article-image">
+        <img :src="article.img" alt="Article Image" />
+      </div>
+      <div class="article-content">
+        <h1>{{ article.title }}</h1>
+        <p>{{ article.content }}</p>
+      </div>
     </div>
-    <div class="article-content">
-      <h1>{{ article.title }}</h1>
-      <p>{{ article.content }}</p>
-    </div>
+    <nuxt-link to="/articles">
+      <h2>go back</h2>
+    </nuxt-link>
   </div>
 </template>
 
@@ -33,6 +38,7 @@ export default {
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  width: 40%;
 }
 
 .article-image img {

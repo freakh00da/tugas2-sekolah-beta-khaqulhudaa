@@ -40,7 +40,7 @@ export default {
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: #fff;
-  width: calc(33.33% - 20px);
+  width: calc(20% - 20px);
 }
 
 .article-card img {
@@ -59,6 +59,4 @@ export default {
   color: #333;
   margin-bottom: 10px;
 }
-
-/* Gaya lainnya tetap tidak berubah */
 </style>
